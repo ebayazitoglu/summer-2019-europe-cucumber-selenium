@@ -1,0 +1,115 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-19T20:17:15.810Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1745600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Default page number",
+        "description": "",
+        "id": "contacts-page;default-page-number",
+        "after": [
+          {
+            "result": {
+              "duration": 750768831,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6069429967,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4646251958,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user enter the sales manager information",
+            "match": {
+              "location": "LoginStepDefs.the_user_enter_the_sales_manager_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4316205159,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user navigates \"Customers\" \"Contacts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Customers\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Contacts\"",
+                  "offset": 31
+                }
+              ],
+              "location": "NavigationMenuStepDefs.the_user_navigates(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77119618,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "default page number should be 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 30
+                }
+              ],
+              "location": "NavigationMenuStepDefs.default_page_number_should_be(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Contacts Page",
+    "description": "",
+    "id": "contacts-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Contacts.feature",
+    "tags": []
+  }
+]
